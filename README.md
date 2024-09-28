@@ -26,4 +26,8 @@ It's for all stuff related to new OSRESS website [_**osress.pages.dev**_](https:
 
 The OSRESS website is built with SvelteKit and TailwindCSS. It generates static files during the build process, with the website's content sourced from Markdown files located in the `content` folder.
 
+## One More Thing...
+
+We’ll be testing everything in production for now! Jokes aside, this is (hopefully) just a temporary solution :)
+
 ---
