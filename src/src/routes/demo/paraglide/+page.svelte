@@ -17,6 +17,7 @@
 
 
 <h1>{m.hello_world({ name: 'SvelteKit User' })}</h1>
+<h2>{m.thank_you()}</h2>
 <div>
 	<button onclick={() => switchToLanguage('en')}>en</button>
 	<button onclick={() => switchToLanguage('pl')}>pl</button>
