@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/logo.png" alt="OSRESS Logo" width="256">
+  <img src="/square_logo.jpg" alt="OSRESS Logo" width="256">
 </p>
 
 
