@@ -1,10 +1,8 @@
+name: "deploy-dev"
+
 on:
   workflow_dispatch:
-    inputs:
-      environment:
-        description: "Choose an environment to deploy to: <dev|staging|prod>"
-        required: true
-        default: "dev"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,4 +13,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3.11.0
         with:
           apiToken: ${{ secrets.OSRESS_CLOUDFLARE_API_TOKEN }}
-          command: deploy --env ${{ github.event.inputs.environment }}
+          preCommands: cd src && npm install && npm run build
+          command: pages deploy src/build --project-name=osress --branch dev
