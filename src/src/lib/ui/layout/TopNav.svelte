@@ -5,7 +5,7 @@
 <nav class="bg-neutral-100 text-black">
 	<a class="flex" href="/">
 		<div class="flex-1 bg-[#7D0000]"></div>
-		<img class="" src="./top.svg" alt="OSRESS" />
+		<img class="" src="/top.svg" alt="OSRESS" />
 		<div class="flex-1 bg-neutral-100"></div>
 	</a>
 
