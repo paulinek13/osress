@@ -1,4 +1,5 @@
-name: "deploy-dev"
+name: "deploy-cloudflare"
+description: "Manually deploy to Cloudflare Pages. Use the `main` branch for production deployments and the `dev` branch for preview deployments."
 
 on:
   workflow_dispatch:
@@ -14,4 +15,4 @@ jobs:
         with:
           apiToken: ${{ secrets.OSRESS_CLOUDFLARE_API_TOKEN }}
           preCommands: cd src && npm install && npm run build
-          command: pages deploy src/build --project-name=osress --branch dev
+          command: pages deploy src/build --project-name=osress
