@@ -1,0 +1,18 @@
+name: "deploy-cloudflare"
+description: "Manually deploy to Cloudflare Pages. Use the `main` branch for production deployments and the `dev` branch for preview deployments."
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3.11.0
+        with:
+          apiToken: ${{ secrets.OSRESS_CLOUDFLARE_API_TOKEN }}
+          preCommands: cd src && npm install && npm run build
+          command: pages deploy src/build --project-name=osress
