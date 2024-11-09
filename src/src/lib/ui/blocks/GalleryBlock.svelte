@@ -2,6 +2,7 @@
 	import { onMount, afterUpdate } from 'svelte';
 
 	export let images = [];
+	export let thumbs = [];
 
 	let selectedImage = null;
 	let selectedIndex = -1;
@@ -65,10 +66,10 @@
 <div
 	class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 max-w-screen-xl mx-auto"
 >
-	{#each images as image, index}
-		<button class="relative w-full h-64" on:click={() => openModal(image, index)}>
+	{#each thumbs as thumb, index}
+		<button class="relative w-full h-64" on:click={() => openModal(images[index], index)}>
 			<img
-				src={image}
+				src={thumb}
 				alt="OSRESS Gallery Item"
 				class="absolute top-0 left-0 w-full h-full object-cover hover:opacity-70"
 			/>
