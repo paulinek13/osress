@@ -7,7 +7,7 @@
 	import Footer from '$lib/ui/layout/Footer.svelte';
 	import TopNav from '$lib/ui/layout/TopNav.svelte';
 
-	let { children } = $props();
+	const { children } = $props();
 </script>
 
 <svelte:head>
