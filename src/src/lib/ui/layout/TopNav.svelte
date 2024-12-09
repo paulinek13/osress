@@ -11,6 +11,7 @@
 
 	<div class="bg-neutral-100 text-black font-bold flex flex-wrap justify-center">
 		<NavLink href="/news">News</NavLink>
+		<NavLink href="/consortium">Consortium</NavLink>
 		<NavLink href="/editions">Editions</NavLink>
 		<NavLink href="/pictures">Pictures</NavLink>
 		<NavLink href="/videos">Videos</NavLink>
