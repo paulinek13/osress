@@ -17,3 +17,77 @@ body {
 span._email b {
     display: none;
 }
+
+article {
+    margin: 1rem auto;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    line-height: 1.4;
+
+    header {
+        margin-bottom: 0.6rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0.5rem auto;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0.5rem auto;
+    }
+}
+
+.consortium {
+    article {
+        gap: 2rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: .4rem;
+
+        div {
+            flex: 1 1 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: .2rem;
+
+            img {
+                border: 1px solid #e5e5e5;
+                flex: 1;
+                min-width: 0;
+                min-height: 0;
+            }
+        }
+
+        p {
+            flex: 1 1 200px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+        }
+    }
+}
