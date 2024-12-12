@@ -7,7 +7,7 @@
 	import Footer from '$lib/ui/layout/Footer.svelte';
 	import TopNav from '$lib/ui/layout/TopNav.svelte';
 
-	let { children } = $props();
+	const { children } = $props();
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
 
 <div
 	id="OSRESS"
-	class="fixed top-0 left-0 bottom-0 w-full overflow-auto flex flex-col bg-neutral-50 text-black text-base"
+	class="fixed top-0 left-0 bottom-0 w-full overflow-auto flex flex-col bg-neutral-50 text-black"
 >
 	<TopNav />
 
