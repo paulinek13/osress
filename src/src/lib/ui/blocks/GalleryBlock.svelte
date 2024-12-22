@@ -9,8 +9,10 @@
 	let touchStartX = 0;
 	let touchEndX = 0;
 	let modal;
+	let isImageLoading = false;
 
 	function openModal(image, index) {
+		isImageLoading = true;
 		selectedImage = image;
 		selectedIndex = index;
 	}
@@ -18,17 +20,20 @@
 	function closeModal() {
 		selectedImage = null;
 		selectedIndex = -1;
+		isImageLoading = false;
 	}
 
 	function showNextImage() {
-		if (selectedIndex < images.length - 1) {
+		if (selectedIndex < images.length - 1 && !isImageLoading) {
+			isImageLoading = true;
 			selectedIndex++;
 			selectedImage = images[selectedIndex];
 		}
 	}
 
 	function showPreviousImage() {
-		if (selectedIndex > 0) {
+		if (selectedIndex > 0 && !isImageLoading) {
+			isImageLoading = true;
 			selectedIndex--;
 			selectedImage = images[selectedIndex];
 		}
@@ -54,6 +59,10 @@
 		if (touchEndX > touchStartX) showPreviousImage();
 	}
 
+	function handleImageLoad() {
+		isImageLoading = false;
+	}
+
 	onMount(() => {
 		if (modal) modal.focus();
 	});
@@ -77,6 +86,13 @@
 	{/each}
 </div>
 
+<!-- Preload full-resolution images -->
+<!-- <div class="hidden">
+	{#each images as image}
+		<img src={image} alt="Preloaded OSRESS Gallery Item" />
+	{/each}
+</div> -->
+
 {#if selectedImage}
 	<div
 		role="button"
@@ -93,8 +109,13 @@
 			class="text-2xl px-2 xl:text-4xl xl:px-4 hidden sm:block text-neutral-400 hover:text-neutral-300"
 			>←</button
 		>
-		<div class="flex-1 max-h-fit self-center">
-			<img src={selectedImage} alt="Selected OSRESS Gallery Item" class="m-auto my-auto" />
+		<div class="flex-1 max-h-fit self-center relative">
+			{#if isImageLoading}
+				<div class="absolute inset-0 flex items-center justify-center">
+					<div class="loader"></div>
+				</div>
+			{/if}
+			<img src={selectedImage} alt="Selected OSRESS Gallery Item" class="m-auto my-auto" on:load={handleImageLoad} />
 		</div>
 		<button
 			on:click|stopPropagation={showNextImage}
@@ -103,3 +124,19 @@
 		>
 	</div>
 {/if}
+
+<style>
+	.loader {
+		border: 4px solid rgba(255, 255, 255, 0.3);
+		border-radius: 50%;
+		border-top: 4px solid white;
+		width: 40px;
+		height: 40px;
+		animation: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+</style>

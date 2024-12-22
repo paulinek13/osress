@@ -1,4 +1,45 @@
-# Documentation
+# OSRESS Website Documentation
+
+## About
+
+The OSRESS (Outdoor Sports and Recreation Education Summer School) website, hosted at [osress.pages.dev](https://osress.pages.dev), serves as the central platform for information about OSRESS, including event details, news, and related resources.
+
+This repo contains the source code, documentation, and other resources required for developing and maintaining the website.
+
+## Repository Structure
+
+The repo is organized into the following main directories:
+
+- `/.github`: GitHub-specific files for project management and automation.
+  - `/workflows`: GitHub Actions workflows for deployment.
+- `/docs`: Markdown documentation files, including this guide.
+- `/site`: The main directory for the SvelteKit project.
+  - `/messages`: Localization files for internationalization (i18n).
+  - `/project.inlang`: Inlang directory for the project
+  - `/src`: The core of the website.
+    - `/routes`: SvelteKit route files for various pages (e.g., `/news`, `/pictures`, `/videos`).
+    - `/lib`: Reusable code, such as utilities and components, accessible via the `$lib` alias.
+      - `/ui`: UI components. [Learn more about UI component organization](#ui-components-organization).
+  - `/static`: Static assets.
+    - `/ext`: The main external content for the OSRESS website (a separate Git repo excluded from the main one, used exclusively during the build process to load content).
+
+## The Website
+
+### Implementation
+
+The website is built using the [SvelteKit](https://svelte.dev/docs/kit) framework for its structure and styled with [Tailwind CSS](https://tailwindcss.com). It also supports internationalization via the [Paraglide-SvelteKit](https://inlang.com/m/dxnzrydw/paraglide-sveltekit-i18n) library. The primary font used is [Inter](https://fontsource.org/fonts/inter).
+
+### Content
+
+The website's content is managed separately from its source code and stored in a different repository. Before building the website and deploying it, the content repo must be placed in the `/site/static/ext` directory.
+
+The decision to separate the content repository from the main source code ensures a cleaner and more maintainable codebase. This separation allows for easier updates to frequently changing content without requiring modifications to the source code, which in turn streamlines the deployment workflows.
+
+Images for each edition of OSRESS are hosted at unique subdomains `https://osress-[YEAR].pages.dev` (e.g., `osress-2024.pages.dev`). This setup helps simplify content organization. Additionally, separating images from the main build optimizes workflows, allowing for better performance.
+
+### Hosting
+
+The website is fully static and hosted on [Cloudflare](https://www.cloudflare.com/). Deployment—both to production and preview environments—is managed through a GitHub workflow called `deploy-cloudflare`, which is triggered manually.
 
 ## Guidelines
 
