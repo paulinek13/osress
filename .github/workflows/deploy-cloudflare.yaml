@@ -10,6 +10,18 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Clone site content repository
+        run: |
+          git clone https://x-access-token:${{ secrets.PAT_OSRESS_CONTENT }}@github.com/osress/content.git src/static/ext
+
+      - name: Verify site content
+        run: |
+          if [ ! -d "src/static/ext" ] || [ -z "$(ls -A src/static/ext)" ]; then
+            echo "Error: The private repository is empty or missing."
+            exit 1
+          fi
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3.11.0
         with:
