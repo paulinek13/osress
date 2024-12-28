@@ -13,11 +13,11 @@ jobs:
       
       - name: Clone site content repository
         run: |
-          git clone https://x-access-token:${{ secrets.PAT_OSRESS_CONTENT }}@github.com/osress/content.git src/static/ext
+          git clone https://x-access-token:${{ secrets.PAT_OSRESS_CONTENT }}@github.com/osress/content.git site/static/ext
 
       - name: Verify site content
         run: |
-          if [ ! -d "src/static/ext" ] || [ -z "$(ls -A src/static/ext)" ]; then
+          if [ ! -d "site/static/ext" ] || [ -z "$(ls -A site/static/ext)" ]; then
             echo "Error: The private repository is empty or missing."
             exit 1
           fi
@@ -26,5 +26,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3.11.0
         with:
           apiToken: ${{ secrets.OSRESS_CLOUDFLARE_API_TOKEN }}
-          preCommands: cd src && npm install && npm run build
-          command: pages deploy src/build --project-name=osress
+          preCommands: cd site && npm install && npm run build
+          command: pages deploy site/build --project-name=osress
