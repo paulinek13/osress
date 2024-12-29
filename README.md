@@ -28,7 +28,7 @@ The development stack also includes:
 is used for internationalization support.
 
 This is not an exhaustive list of all dependencies. For a complete list,
-please refer to the [`src/package.json`](/src/package.json) file.
+please refer to the [`site/package.json`](/site/package.json) file.
 
 ## About OSRESS
 
