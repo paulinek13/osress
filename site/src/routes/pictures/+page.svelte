@@ -1,5 +1,7 @@
 <script>
 	import ContentBlock from '$lib/ui/blocks/ContentBlock.svelte';
+
+	export let data;
 </script>
 
 <ContentBlock title="Pictures" titleSecond>
@@ -9,10 +11,9 @@
 	<br />
 
 	<div class="py-4 lg:py-8 flex flex-col text-center gap-4">
-		<a href="/pictures/2019">🇵🇱 <span>2019</span> Biała Podlaska</a>
-		<a href="/pictures/2017">🇱🇻 <span>2017</span> Madona</a>
-		<a href="/pictures/2015">🇪🇸 <span>2015</span> Málaga</a>
-		<a href="/pictures/2013">🇵🇱 <span>2013</span> Biała Podlaska</a>
+		{#each data.pictureYears as { year, country, location }}
+			<a href="/pictures/{year}">{country} <span>{year}</span> {location}</a>
+		{/each}
 	</div>
 </ContentBlock>
 
