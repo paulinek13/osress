@@ -1,18 +1,7 @@
 <script>
-	import { onMount } from "svelte";
-
-	let content;
-
-	async function fetchContent() {
-		const response = await fetch('/ext/content/consortium/main.html');
-		content = await response.text();
-	}
-
-	onMount(() => {
-		fetchContent();
-	});
+	export let data;
 </script>
 
 <div class="consortium">
-    {@html content}
+	{@html data.content}
 </div>
