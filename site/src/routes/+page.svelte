@@ -13,11 +13,11 @@
 	>OSRESS stands for <b>Outdoor Sports and Recreation Education Summer School</b>, an innovative
 	international academic initiative that transforms traditional learning through immersive,
 	cross-cultural experiences. <br /> <br /> Launched in 2010 by the
+	<a href="https://www.lspa.eu">Latvian Academy of Sport Education</a> and the
 	<a href="https://www.awf-bp.edu.pl"
 		>Józef Piłsudski University of Physical Education in Warsaw - Branch in Biała Podlaska</a
-	>
-	and the <a href="https://www.lspa.eu">Latvian Academy of Sport Education</a>, this program brings
-	together students, doctoral candidates, and academics from various European universities. <br />
+	>, this program brings together students, doctoral candidates, and academics from various European
+	universities. <br />
 	<br />
 	By creating a dynamic educational platform that extends beyond conventional academic boundaries, OSRESS
 	promotes personal development, intercultural understanding, and practical learning in natural environments.
