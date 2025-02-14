@@ -1,5 +1,4 @@
 export function load() {
-	// REVIEW: Hardcoded for now, will be dynamic later
-	const editions = [2010, 2011, 2012, 2013, 2014, 2020];
+	const editions = [...Array(2024 - 2010 + 1).keys()].map(i => 2024 - i).filter(year => year !== 2021);
 	return { editions };
 }
