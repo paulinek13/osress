@@ -12,7 +12,7 @@
 
 	<div class="py-4 lg:py-8 flex flex-col text-center gap-4">
 		{#each data.pictureYears as { year, country, location }}
-			<a href="/pictures/{year}">{country} <span>{year}</span> {location}</a>
+			<a class="bg-neutral-50" href="/pictures/{year}">{country} <span>{year}</span> {location}</a>
 		{/each}
 	</div>
 </ContentBlock>

@@ -16,7 +16,7 @@
 
 <div
 	id="OSRESS"
-	class="fixed top-0 left-0 bottom-0 w-full overflow-auto flex flex-col bg-neutral-50 text-black"
+	class="fixed top-0 left-0 bottom-0 w-full overflow-auto flex flex-col bg-neutral-100 text-black"
 >
 	<TopNav />
 
