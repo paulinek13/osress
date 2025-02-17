@@ -10,6 +10,8 @@
 		"lint": "prettier --check ."
 	},
 	"devDependencies": {
+		"@octokit/plugin-paginate-rest": "^11.4.2",
+		"@octokit/request": "^9.2.2",
 		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.17.2",
@@ -19,6 +21,8 @@
 		"@tailwindcss/forms": "^0.5.10",
 		"@tailwindcss/typography": "^0.5.16",
 		"autoprefixer": "^10.4.20",
+		"cookie": "^1.0.2",
+		"esbuild": "^0.25.0",
 		"mdsvex": "^0.11.2",
 		"prettier": "^3.5.1",
 		"prettier-plugin-svelte": "^3.3.3",
