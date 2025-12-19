@@ -2,6 +2,7 @@
 	import EditionRow from '../common/EditionRow.svelte';
 
 	const editions = [
+		{ flag: '🇱🇹', year: 2025, city: 'Puvočiai', country: 'Lithuania' },
 		{ flag: '🇱🇹', year: 2024, city: 'Kaunas', country: 'Lithuania' },
 		{ flag: '🇱🇻', year: 2023, city: 'Riga', country: 'Latvia' },
 		{ flag: '🇮🇹', year: 2022, city: 'Verona', country: 'Italy' },

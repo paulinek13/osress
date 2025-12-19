@@ -61,6 +61,7 @@ academics across European educational institutions
 
 ### All editions of the Summer School
 
+- 🇱🇹 2025 Puvočiai, Lithuania
 - 🇱🇹 2024 Kaunas, Lithuania
 - 🇱🇻 2023 Riga, Latvia
 - 🇮🇹 2022 Verona, Italy

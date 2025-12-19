@@ -21,7 +21,7 @@
 	<div class="bg-neutral-100 text-black font-bold flex flex-wrap justify-center">
 		<a href="/news" class="p-2 text-center w-full bg-amber-200">
 			<span class="text-[#7D0000]">Latest News:</span>
-			<span class="ml-2">Summer School 2025 is organised by Vilnius University!</span>
+			<span class="ml-2">Summer School 2026 will be organised by AWF Biała Podlaska!</span>
 		</a>
 	</div>
 </nav>

@@ -21,6 +21,6 @@
 	</div>
 	<br />
 	<div class="border-t border-neutral-900 text-xs text-center p-4">
-		© 2024 OSRESS. All rights reserved.
+		© 2010-2025 OSRESS. All rights reserved.
 	</div>
 </footer>
