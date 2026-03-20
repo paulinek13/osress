@@ -10,28 +10,28 @@
 		"lint": "prettier --check ."
 	},
 	"devDependencies": {
-		"@octokit/plugin-paginate-rest": "^11.6.0",
-		"@octokit/request": "^9.2.4",
-		"@sveltejs/adapter-auto": "^3.3.1",
+		"@octokit/plugin-paginate-rest": "^14.0.0",
+		"@octokit/request": "^10.0.8",
+		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.49.2",
-		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"@sveltejs/kit": "^2.55.0",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.11",
 		"@tailwindcss/typography": "^0.5.19",
-		"autoprefixer": "^10.4.23",
+		"autoprefixer": "^10.4.27",
 		"cookie": "^1.1.1",
-		"mdsvex": "^0.11.2",
-		"prettier": "^3.7.4",
-		"prettier-plugin-svelte": "^3.4.1",
-		"svelte": "^5.46.0",
-		"tailwindcss": "^3.4.19",
-		"vite": "^5.4.21"
+		"mdsvex": "^0.12.7",
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.5.1",
+		"svelte": "^5.54.0",
+		"tailwindcss": "^4.2.2",
+		"vite": "^8.0.1"
 	},
 	"dependencies": {
 		"@fontsource-variable/inter": "^5.2.8",
-		"@inlang/paraglide-sveltekit": "^0.11.5"
+		"@inlang/paraglide-sveltekit": "^0.16.1"
 	},
 	"pnpm": {
 		"overrides": {
