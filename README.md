@@ -24,9 +24,6 @@ The development stack also includes:
 ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**[@inlang/paraglide-sveltekit](https://www.npmjs.com/package/@inlang/paraglide-sveltekit)**
-is used for internationalization support.
-
 This is not an exhaustive list of all dependencies. For a complete list,
 please refer to the [`site/package.json`](/site/package.json) file.
 

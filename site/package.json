@@ -30,8 +30,7 @@
 		"vite": "^8.0.1"
 	},
 	"dependencies": {
-		"@fontsource-variable/inter": "^5.2.8",
-		"@inlang/paraglide-sveltekit": "^0.16.1"
+		"@fontsource-variable/inter": "^5.2.8"
 	},
 	"pnpm": {
 		"overrides": {

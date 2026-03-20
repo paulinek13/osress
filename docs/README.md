@@ -14,7 +14,6 @@ The repo is organized into the following main directories:
   - `/workflows`: GitHub Actions workflows for deployment.
 - `/docs`: Markdown documentation files, including this guide.
 - `/site`: The main directory for the SvelteKit project.
-  - `/messages`: Localization files for internationalization (i18n).
   - `/project.inlang`: Inlang directory for the project
   - `/src`: The core of the website.
     - `/routes`: SvelteKit route files for various pages (e.g., `/news`, `/pictures`, `/videos`).
@@ -27,7 +26,7 @@ The repo is organized into the following main directories:
 
 ### Implementation
 
-The website is built using the [SvelteKit](https://svelte.dev/docs/kit) framework for its structure and styled with [Tailwind CSS](https://tailwindcss.com). It also supports internationalization via the [Paraglide-SvelteKit](https://inlang.com/m/dxnzrydw/paraglide-sveltekit-i18n) library. The primary font used is [Inter](https://fontsource.org/fonts/inter).
+The website is built using the [SvelteKit](https://svelte.dev/docs/kit) framework for its structure and styled with [Tailwind CSS](https://tailwindcss.com). The primary font used is [Inter](https://fontsource.org/fonts/inter).
 
 ### Content
 

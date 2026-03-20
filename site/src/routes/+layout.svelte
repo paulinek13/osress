@@ -1,9 +1,6 @@
 <script>
 	import '../app.css';
 
-	import { i18n } from '$lib/i18n';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-
 	import Footer from '$lib/ui/layout/Footer.svelte';
 	import TopNav from '$lib/ui/layout/TopNav.svelte';
 
@@ -21,9 +18,7 @@
 	<TopNav />
 
 	<main class="flex-1">
-		<ParaglideJS {i18n}>
-			{@render children()}
-		</ParaglideJS>
+		{@render children()}
 	</main>
 
 	<Footer />
