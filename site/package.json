@@ -30,7 +30,8 @@
 		"vite": "^8.0.1"
 	},
 	"dependencies": {
-		"@fontsource-variable/inter": "^5.2.8"
+		"@fontsource-variable/inter": "^5.2.8",
+		"@tailwindcss/postcss": "^4.2.2"
 	},
 	"pnpm": {
 		"overrides": {
